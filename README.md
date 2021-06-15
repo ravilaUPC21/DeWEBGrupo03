@@ -1,4 +1,4 @@
-# [INKA]
+# INKA
 
 ## File Structure
 Within the download you'll find the following directories and files:
