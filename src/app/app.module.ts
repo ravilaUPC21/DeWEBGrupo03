@@ -15,6 +15,7 @@ import { ComponentsModule } from './components/components.module';
 import { ChangePasswordComponent } from './pages/change-password/change-password.component';
 
 
+
 @NgModule({
   imports: [
     BrowserAnimationsModule,
@@ -29,7 +30,8 @@ import { ChangePasswordComponent } from './pages/change-password/change-password
     AppComponent,
     AdminLayoutComponent,
     AuthLayoutComponent,
-    ChangePasswordComponent
+    ChangePasswordComponent,
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
