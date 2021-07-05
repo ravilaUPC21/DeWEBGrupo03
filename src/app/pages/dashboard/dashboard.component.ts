@@ -15,7 +15,7 @@ import {
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
-
+  
   public datasets: any;
   public data: any;
   public salesChart;
