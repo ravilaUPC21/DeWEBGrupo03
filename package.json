@@ -8,8 +8,11 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start"
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
+    "start:server": "ng serve --proxy-config proxy.conf.js ",
+    "start:api": "nodemon server/server.js"
   },
+  
   "private": true,
   "dependencies": {
     "@angular/animations": "10.1.4",
