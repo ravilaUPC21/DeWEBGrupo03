@@ -8,6 +8,6 @@ export class LoginService {
   constructor(private readonly http: HttpClient) { }
 
   getLogin() {
-    return this.http.get('/api/auth/login');
+    return this.http.get('https://localhost:44309/api/auth/login');
   }    
 }
