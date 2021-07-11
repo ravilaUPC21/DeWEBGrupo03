@@ -12,7 +12,6 @@
     "start:server": "ng serve --proxy-config proxy.conf.js ",
     "start:api": "nodemon server/server.js"
   },
-  
   "private": true,
   "dependencies": {
     "@angular/animations": "10.1.4",
