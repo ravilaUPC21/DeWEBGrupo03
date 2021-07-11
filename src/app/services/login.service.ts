@@ -7,7 +7,8 @@ import { Injectable } from '@angular/core';
 export class LoginService {
   constructor(private readonly http: HttpClient) { }
 
-  getLogin() {
-    return this.http.get('/api/auth/login');
-  }    
+  login(data) {
+    return this.http.post<any>('https://localhost:44309/api/auth/login', data);
+  }
+  
 }
