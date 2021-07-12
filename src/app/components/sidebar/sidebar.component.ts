@@ -14,11 +14,11 @@ export const ROUTES: RouteInfo[] = [
   { path: '/register', title: 'Actualización',  icon:'ni-circle-08 text-pink', class: '' },
   { path: '/dashboard', title: 'Comprobantes de Pago',  icon: 'ni-tv-2 text-primary', class: '' },
   { path: '/mis-comprobantes', title: 'Mis Comprobantes',  icon: 'ni-tv-2 text-primary', class: '' },
-    // { path: '/icons', title: 'Icons',  icon:'ni-planet text-blue', class: '' },
-    // { path: '/maps', title: 'Maps',  icon:'ni-pin-3 text-orange', class: '' },
-  
-    // { path: '/tables', title: 'Tables',  icon:'ni-bullet-list-67 text-red', class: '' },
-    { path: '/login', title: 'Login',  icon:'ni-key-25 text-info', class: '' }
+  // { path: '/icons', title: 'Icons',  icon:'ni-planet text-blue', class: '' },
+  // { path: '/maps', title: 'Maps',  icon:'ni-pin-3 text-orange', class: '' },
+
+  // { path: '/tables', title: 'Tables',  icon:'ni-bullet-list-67 text-red', class: '' },
+  { path: '/login', title: 'Login',  icon:'ni-key-25 text-info', class: '' }
 
    
 ];
