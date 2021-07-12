@@ -6,10 +6,12 @@ import { MapsComponent } from '../../pages/maps/maps.component';
 import { UserProfileComponent } from '../../pages/user-profile/user-profile.component';
 import { TablesComponent } from '../../pages/tables/tables.component';
 import { ChangePasswordComponent } from 'src/app/pages/change-password/change-password.component';
+import { MisComprobantesComponent } from 'src/app/pages/mis-comprobantes/mis-comprobantes.component';
 
 
 export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard',        component: DashboardComponent },
+    { path: 'mis-comprobantes',        component: MisComprobantesComponent },
     { path: 'user-profile',     component: UserProfileComponent },
     { path: 'tables',           component: TablesComponent },
     { path: 'icons',            component: IconsComponent },

@@ -3,11 +3,11 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { ComproService } from 'src/app/services/compro.service';
 
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.scss']
+  selector: 'app-mis-comprobantes',
+  templateUrl: './mis-comprobantes.component.html',
+  styleUrls: ['./mis-comprobantes.component.scss']
 })
-export class DashboardComponent implements OnInit {
+export class MisComprobantesComponent implements OnInit {
   
   comprobantes: [];
   searchForm:FormGroup;
@@ -19,7 +19,7 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit() {
     this.searchForm = this.fb.group({
-      date: ['', [Validators.required]]
+      ruc: ['', [Validators.required]]
     });
   }
 
@@ -32,12 +32,9 @@ export class DashboardComponent implements OnInit {
   }
 
   list(data){
-    const {date } = data;
-    console.log(date)
-    const inpDate = `${ date.month }/${ date.day }/${ date.year }`;
-    console.log(inpDate)
-
-    this.comproService.listDate(inpDate).subscribe((rest: any) => {
+    const { ruc } = data;
+    console.log(ruc)
+    this.comproService.listRuc(ruc).subscribe((rest: any) => {
       console.log(rest)
       if(rest.comprobantes.length == 0){
         alert('No se encontro comprobantes');

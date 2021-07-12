@@ -13,6 +13,7 @@ export const ROUTES: RouteInfo[] = [
   { path: '/change-password', title: 'Cambiar clave',  icon:'ni-circle-08 text-pink', class: '' },
   { path: '/register', title: 'Actualización',  icon:'ni-circle-08 text-pink', class: '' },
   { path: '/dashboard', title: 'Comprobantes de Pago',  icon: 'ni-tv-2 text-primary', class: '' },
+  { path: '/mis-comprobantes', title: 'Mis Comprobantes',  icon: 'ni-tv-2 text-primary', class: '' },
     // { path: '/icons', title: 'Icons',  icon:'ni-planet text-blue', class: '' },
     // { path: '/maps', title: 'Maps',  icon:'ni-pin-3 text-orange', class: '' },
   

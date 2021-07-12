@@ -1,0 +1,98 @@
+<div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center" style="min-height: 300px; background-image: url(assets/img/theme/profile_user.jpg); background-size: cover; background-position: center top;">
+        <!-- Mask -->
+   <span class="mask bg-gradient-danger opacity-8"></span>
+        <!-- Header container -->
+       
+   <div class="container-fluid">
+    <div class="header-body">
+      <!-- Card stats -->
+      <div class="row">
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid mt--7">
+
+  <div class="row mt-5">
+    <div class="col-xl-12 mb-5 mb-xl-0">
+      <div class="card shadow">
+        <div class="card-header border-0">
+          <div class="row align-items-center">
+            
+            <div class="col">
+              <h3 class="mb-0">Mis Comprobantes</h3>
+              <form [formGroup]="searchForm" role="form">
+                <div class="row mt-3">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <div class="input-group input-group-alternative mb-4">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text"><i class="ni ni-zoom-split-in"></i></span>
+                        </div>
+                        <input class="form-control form-control-alternative" formControlName="ruc" placeholder="Ingresar ruc" type="text">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <button type="button" class="btn btn-primary" (click)="onSearch()">Buscar</button>
+                  </div>
+                </div>
+              </form>
+              <!-- <p>El filtro de fecha: 20210501 al 20210526</p> -->
+            </div>
+          </div>
+        </div>
+        <div class="table-responsive">
+          <!-- Projects table -->
+          <table class="table align-items-center table-flush">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">Cliente</th>
+                <th scope="col">Ruc</th>
+                <th scope="col">Tipo Doc</th>
+                <th scope="col">Comprobante</th>
+                <th scope="col">Monto</th>
+                <th scope="col">Importe</th>
+                <th scope="col">Fecha Ini.</th>
+                <th scope="col">PDF</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr *ngFor="let compro of comprobantes">
+                <th scope="row">
+                  {{ compro.razonSocialAdquiriente }}
+                </th>
+                <td>
+                  {{ compro.numeroDocumentoAdquiriente }}
+                </td>
+                <td>
+                  {{ compro.tipoDocumento }}
+                </td>
+                <td>
+                  {{ compro.serieNumero }}
+                </td>
+                <td>
+                  {{ compro.tipoMoneda }}
+                </td>
+                <td>
+                  {{ compro.totalVenta }}
+                </td>
+                <td>
+                  {{ compro.fechaEmision }}
+                </td>
+                <td>
+                  <a href="{{ compro.rutaDocumento }}" target="_blank">Descarga aqui</a>
+                </td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
